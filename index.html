@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujal Magarde — Software Engineer</title>
+<meta name="description" content="Portfolio of Sujal Magarde, Computer Science Engineering student and full-stack developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo"><span class="dot"></span>sujal.dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+      <a href="#contact" class="btn btn-primary nav-cta"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-kicker"><span class="pulse-dot"></span>AVAILABLE FOR ENTRY-LEVEL SWE ROLES</div>
+      <h1>Hi, I'm Sujal Magarde.<br>I build <span>full-stack</span> software that works.</h1>
+      <div class="type-line"><span id="typeText"></span><span class="cursor">▍</span></div>
+      <p class="lead">B.Tech Computer Science Engineering student (Batch 2027) at RGPV, Bhopal — focused on backend systems, clean APIs, and shipping projects end to end.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+        <a href="sujal.pdf" download class="btn btn-ghost"><i class="fa-solid fa-download"></i> Download Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a class="social-btn" href="https://github.com/sujalmagarde00" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="social-btn" href="https://linkedin.com/in/sujal-magarde" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="social-btn" href="mailto:magardesujal00@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a class="social-btn" href="tel:+917649860393" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo" id="heroPhoto">
+        <img src="sujal.png" alt="Sujal Magarde" onerror="this.remove(); document.getElementById('heroPhoto').classList.add('hero-photo-fallback'); document.getElementById('heroPhoto').textContent='SM';">
+      </div>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="terminal-dot t-red"></span><span class="terminal-dot t-yellow"></span><span class="terminal-dot t-green"></span>
+          <span class="terminal-title">sujal@portfolio</span>
+        </div>
+        <div class="terminal-body" id="termBody"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow">ABOUT</div>
+    <h2 class="section-title reveal">A little about me</h2>
+    <p class="section-sub reveal">Where I'm from, what I study, and what I'm looking for next.</p>
+    <div class="about-grid">
+      <div class="avatar-card reveal">
+        <div class="avatar-mono" id="avatarMono">
+          <img src="sujal.png" alt="Sujal Magarde" onerror="this.remove(); document.getElementById('avatarMono').textContent='SM';">
+        </div>
+        <h3>Sujal Magarde</h3>
+        <p>Computer Science Engineering</p>
+        <ul class="avatar-meta">
+          <li><span>Location</span><b>Bhopal, MP</b></li>
+          <li><span>Batch</span><b>2027</b></li>
+          <li><span>CGPA</span><b>6.95 / 10</b></li>
+          <li><span>Born</span><b>09 Jul 2006</b></li>
+        </ul>
+      </div>
+      <div class="about-copy reveal">
+        <p>I'm a Computer Science Engineering student with a good grip on programming and full-stack development. I enjoy taking a problem apart, figuring out the cleanest way to model it, and building something that actually works end to end — from the database schema up to the interface.</p>
+        <p>My recent focus has been backend engineering: designing REST APIs, working with relational databases, and integrating services like Kafka for message-driven workflows. I'm looking for an entry-level Software Engineer role where I can keep learning new technologies while contributing to real, useful applications.</p>
+        <div class="stat-row">
+          <div class="stat-box"><div class="num">2+</div><div class="lbl">Full-Stack Projects</div></div>
+          <div class="stat-box"><div class="num">6mo</div><div class="lbl">JPMorgan Simulation</div></div>
+          <div class="stat-box"><div class="num">10+</div><div class="lbl">Technologies</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="eyebrow">SKILLS</div>
+    <h2 class="section-title reveal">What I work with</h2>
+    <p class="section-sub reveal">Languages, tools, and fundamentals I rely on day to day.</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h4>Languages</h4>
+        <div class="skill-item"><div class="skill-top"><span>Java / Spring Boot</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>JavaScript / React.js</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>Node.js</span><span>78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>C / C++</span><span>75%</span></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>MySQL</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <h4>Tools & Platforms</h4>
+        <div class="skill-item"><div class="skill-top"><span>Git & GitHub</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>VS Code</span><span>90%</span></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>Docker (Basics)</span><span>55%</span></div><div class="bar-track"><div class="bar-fill" data-w="55"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>Apache Kafka</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-w="60"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>REST / Postman</span><span>78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+      </div>
+      <div class="skill-card reveal">
+        <h4>CS Fundamentals</h4>
+        <div class="skill-item"><div class="skill-top"><span>Data Structures & Algorithms</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>DBMS</span><span>78%</span></div><div class="bar-track"><div class="bar-fill" data-w="78"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>Operating Systems</span><span>72%</span></div><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>Computer Networks</span><span>72%</span></div><div class="bar-track"><div class="bar-fill" data-w="72"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><span>OOP</span><span>82%</span></div><div class="bar-track"><div class="bar-fill" data-w="82"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="eyebrow">EXPERIENCE</div>
+    <h2 class="section-title reveal">Where I've worked</h2>
+    <p class="section-sub reveal">Hands-on, simulated production work with real engineering constraints.</p>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <span class="tl-date">MAY 2025 — NOV 2025</span>
+        <div class="tl-card">
+          <h3>Software Engineering Job Simulation</h3>
+          <div class="org">JPMorganChase · via Forage</div>
+          <ul>
+            <li>Integrated Kafka into a Spring Boot microservice to consume and deserialize high-volume transaction messages using a configurable topic and embedded Kafka test framework.</li>
+            <li>Implemented transaction validation and persistence logic with Spring Data JPA and an H2 SQL database, including entity modeling and balance updates across relational user records.</li>
+            <li>Connected the service to an external REST Incentive API using RestTemplate, processing incentive responses into transactional workflows.</li>
+            <li>Developed a REST endpoint for querying user balances, returning JSON responses through a Spring controller with clean architectural boundaries.</li>
+            <li>Verified system behavior using Maven test suites and debugger-driven inspection across messaging, database, and API layers.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="eyebrow">PROJECTS</div>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <p class="section-sub reveal">Full-stack systems built from the database up.</p>
+    <div class="projects-grid">
+      <div class="proj-card reveal">
+        <div class="proj-head">
+          <img src="project.jpg" alt="Alumni Connect System">
+        </div>
+        <h3>Student Management System</h3>
+        <p class="role">Backend developer — REST APIs & database integration</p>
+        <div class="tag-row">
+          <span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MySQL</span>
+        </div>
+        <ul>
+          <li>Full-stack system to manage student records with modules for attendance, fee management, and receipt generation.</li>
+          <li>Designed the MySQL schema for efficient, structured data retrieval.</li>
+          <li>Built the Node.js + Express backend with OOP principles and secure server-side logic.</li>
+          <li>Improved administrative efficiency by digitizing manual record-keeping.</li>
+        </ul>
+      </div>
+      <div class="proj-card reveal">
+        <div class="proj-head">
+          
+          <img src="project1.jpg" alt="Alumni Connect System">
+        </div>
+        <h3>Alumni Connect System</h3>
+        <p class="role">Backend developer — auth & database integration</p>
+        <div class="tag-row">
+          <span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">MySQL</span>
+        </div>
+        <ul>
+          <li>Web platform connecting students with alumni for career guidance and networking.</li>
+          <li>Built user registration, login authentication, and profile management.</li>
+          <li>Designed a secure MySQL schema and implemented messaging between students and alumni.</li>
+          <li>Developed REST APIs and authentication for the Node.js backend.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="eyebrow">EDUCATION</div>
+    <h2 class="section-title reveal">Academic background</h2>
+    <p class="section-sub reveal">Schooling and university, in order.</p>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <span class="tl-date">EXPECTED JUNE 2027</span>
+        <div class="tl-card">
+          <h3>B.Tech — Computer Science & Engineering</h3>
+          <div class="org">Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal, MP</div>
+          <span class="cgpa">CGPA 6.95 / 10.0</span>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <span class="tl-date">PASSED 2023</span>
+        <div class="tl-card">
+          <h3>Class XII — MP Board</h3>
+          <div class="org">Govt. Excellence Boys Higher Secondary School, Bhainsdehi</div>
+          <span class="cgpa">68.8%</span>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <span class="tl-date">PASSED 2021</span>
+        <div class="tl-card">
+          <h3>Class X — MP Board</h3>
+          <div class="org">Govt. High School, Pohar</div>
+          <span class="cgpa">78.0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="eyebrow">ACHIEVEMENTS</div>
+    <h2 class="section-title reveal">Certifications & milestones</h2>
+    <p class="section-sub reveal">Programs and workshops completed along the way.</p>
+    <div class="ach-grid">
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-solid fa-award"></i></div><p>Completed the JPMorgan Chase Software Engineering Job Simulation.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-solid fa-people-group"></i></div><p>Collaborated in a team hackathon to design and build a solution under time constraints.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-brands fa-java"></i></div><p>Completed Core Java Programming certification — Infosys.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-solid fa-network-wired"></i></div><p>Completed Introduction to Computer Networks — CISCO.</p></div>
+      <div class="ach-card reveal"><div class="ach-icon"><i class="fa-solid fa-briefcase"></i></div><p>Attended the Placement Readiness Workshop — SISTec.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="container">
+    <div class="eyebrow">CERTIFICATES</div>
+    <h2 class="section-title reveal">Proof of work</h2>
+    <p class="section-sub reveal">Click any certificate to view it full size.</p>
+    <div class="cert-grid" id="certGrid">
+      <div class="cert-card reveal" data-src="certificate-jpmorgan.jpg" data-title="JPMorganChase Software Engineering Simulation" data-sub="Forage · 2025">
+        <div class="cert-thumb">
+          <img src="software.png" alt="JPMorganChase Software Engineering Simulation certificate"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="cert-fallback" style="display:none;"><i class="fa-solid fa-file-image"></i>certificate-jpmorgan.jpg<br>not found — add file to folder</div>
+          <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+        </div>
+        <div class="cert-info"><h4>JPMorganChase Job Simulation</h4><p>Forage · 2025</p></div>
+      </div>
+
+      <div class="cert-card reveal" data-src="certificate-infosys-java.jpg" data-title="Core Java Programming" data-sub="Infosys">
+        <div class="cert-thumb">
+          <img src="java.png" alt="Core Java Programming certificate"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="cert-fallback" style="display:none;"><i class="fa-solid fa-file-image"></i>certificate-infosys-java.jpg<br>not found — add file to folder</div>
+          <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+        </div>
+        <div class="cert-info"><h4>Core Java Programming</h4><p>Infosys</p></div>
+      </div>
+
+      <div class="cert-card reveal" data-src="certificate-cisco-networks.jpg" data-title="Introduction to Computer Networks" data-sub="CISCO">
+        <div class="cert-thumb">
+          <img src="cisco.png" alt="Introduction to Computer Networks certificate"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="cert-fallback" style="display:none;"><i class="fa-solid fa-file-image"></i>certificate-cisco-networks.jpg<br>not found — add file to folder</div>
+          <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+        </div>
+        <div class="cert-info"><h4>Intro to Computer Networks</h4><p>CISCO</p></div>
+      </div>
+
+      <div class="cert-card reveal" data-src="certificate-hackathon.jpg" data-title="Hackathon Participation" data-sub="Team Project">
+        <div class="cert-thumb">
+          <img src="hackathon.jpg" alt="Hackathon participation certificate"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="cert-fallback" style="display:none;"><i class="fa-solid fa-file-image"></i>certificate-hackathon.jpg<br>not found — add file to folder</div>
+          <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+        </div>
+        <div class="cert-info"><h4>Hackathon Participation</h4><p>Team Project</p></div>
+      </div>
+
+      <div class="cert-card reveal" data-src="certificate-sistec-workshop.jpg" data-title="Placement Readiness Workshop" data-sub="SISTec">
+        <div class="cert-thumb">
+          <img src="SagarManthanRBPlacem.png-2.jpg" alt="Placement Readiness Workshop certificate"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="cert-fallback" style="display:none;"><i class="fa-solid fa-file-image"></i>certificate-sistec-workshop.jpg<br>not found — add file to folder</div>
+          <span class="cert-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+        </div>
+        <div class="cert-info"><h4>Placement Readiness Workshop</h4><p>SISTec</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></div>
+  <div class="lightbox-inner">
+    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="eyebrow">CONTACT</div>
+    <h2 class="section-title reveal">Let's work together</h2>
+    <p class="section-sub reveal">Have a role in mind, or just want to say hi? Reach out.</p>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><h4>Email</h4><a href="mailto:magardesujal00@gmail.com">magardesujal00@gmail.com</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><h4>Phone</h4><a href="tel:+917649860393">+91 76498 60393</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><h4>Location</h4><p>Bhopal, Madhya Pradesh, India</p></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div><h4>GitHub</h4><a href="https://github.com/sujalmagarde00" target="_blank" rel="noopener">github.com/sujalmagarde00</a></div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div><h4>LinkedIn</h4><a href="https://linkedin.com/in/sujal-magarde" target="_blank" rel="noopener">linkedin.com/in/sujal-magarde</a></div>
+        </div>
+      </div>
+      <form class="form-card reveal" id="contactForm">
+        <div class="form-row">
+          <label for="cf-name">Your name</label>
+          <input id="cf-name" type="text" name="name" placeholder="Full name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Your email</label>
+          <input id="cf-email" type="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" placeholder="What would you like to talk about?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> Sujal Magarde.Develop With❤️.</p>
+    <div class="foot-links">
+      <a href="https://github.com/sujalmagarde00" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/sujal-magarde" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:magardesujal00@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<div class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></div>
+
+<script src="script.js"></script>
+</body>
+</html>
